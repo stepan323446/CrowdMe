@@ -1,0 +1,6 @@
+OpenSans: 
+
+Light 300
+Regular 400
+Semi-bold 600
+font-family: 'Open Sans', sans-serif;
