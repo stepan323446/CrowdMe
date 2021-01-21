@@ -28,6 +28,17 @@ $(function()
         autoplay: true,
         autoplaySpeed: 5000,
         pauseOnHocus: true,
-        draggable: false
+        draggable: false,
+
+        responsive:[
+            {
+                breakpoint: 1170,
+                settings:
+                {
+                    slidesToShow: 2,
+                    arrows: false,
+                }
+            }
+        ]
     });
 });

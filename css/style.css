@@ -180,7 +180,6 @@ a
 .info-title p
 {
     font-weight: 600;
-    font-size: 31px;
     margin-top: 28px;
 }
 .info-descpr {
@@ -514,6 +513,7 @@ a
 
     background-color: #add136;
 }
+/* Slick Слайдер  */
 .project-items-inner
 {
     position: relative;
@@ -526,6 +526,16 @@ a
 .slick-list
 {
     border-radius: 5px;
+}
+.slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    display: flex !important;
+    height: inherit !important;
 }
 .slick-slide:focus
 {
@@ -588,7 +598,7 @@ a
 .project-item__info-progress-bar
 {
     position: relative;
-    max-height: 14px;
+    height: 14px;
     width: 100%;
 
     border: 0px;
