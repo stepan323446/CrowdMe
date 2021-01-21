@@ -421,11 +421,11 @@ a
 {
     margin-top: 70px;
     display: flex;
+    min-width: 0;
 }
 .project-item
 {
     position: relative;
-    max-width: 300px;
     overflow: hidden;
 
     display: flex;
@@ -440,6 +440,8 @@ a
     padding-right: 24px;
     padding-bottom: 27px;
     padding-top: 226px;
+
+    margin: 0 20px;
 
     Box-shadow: inset 0 0 0 1px #e5e5e5;
     background-color: #f9f9f9;
@@ -516,11 +518,55 @@ a
 {
     position: relative;
     display: flex;
+    min-width: 0;
     justify-content: space-between;
-    width: 100%;
     height: 100%;
     z-index: 0;
 }
+.slick-list
+{
+    border-radius: 5px;
+}
+.slick-slide:focus
+{
+    outline: none;
+}
+.slick-arrow
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+    background-size: 25px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #ebebeb;
+    
+    border: none;
+    border-radius: 50px;
+
+    top: 50%;
+}
+.slick-prev
+{
+    right: 101%;
+    background-position-x: 45%;
+    background-image: url(../images/back.svg);
+}
+.slick-next
+{
+    left: 101%;
+    background-position-x: 55%;
+    background-image: url(../images/next.svg);
+}
+.slick-arrow:hover
+{
+    background-color: #c0c0c0;
+}
+.slick-arrow:focus
+{ outline: none; }
+
 .project-item__info-title
 {
     margin-top: 30px;
