@@ -26,17 +26,37 @@ $(function()
         slidesToScroll: 3,
         arrows: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         pauseOnHocus: true,
         draggable: false,
 
-        responsive:[
+        responsive:
+        [
             {
                 breakpoint: 1170,
                 settings:
                 {
-                    slidesToShow: 2,
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 980,
+                settings:
+                {
                     arrows: false,
+                    slidesToScroll: 2,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:
+                {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             }
         ]

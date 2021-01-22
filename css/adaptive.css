@@ -1,16 +1,16 @@
-@media only screen and (max-width: 1155px)
+@media only screen and (max-width: 980px)
 {
     body
     {
-        font-size: 30px;
+        font-size: 20px;
     }
     .logo
     {
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .login-btn
     {
-        font-size: 20px;
+        font-size: 15px;
     }
     .header-menu
     {
@@ -18,37 +18,45 @@
     }
     .container
     {
-        max-width: 1155px
+        max-width: 980px;
     }
     .main-Slider-title
     {
-        font-size: 50px;
+        font-size: 40px;
     }
     .main-Slider-title span
     {
-        font-size: 60px;
+        font-size: 50px;
     }
     .becomeMember-btn
     {
-        font-size: 30px;
+        font-size: 25px;
     }
     /* Табы */
+    .info-tabs__menu li a
+    {
+        font-weight: 500;
+    }
+    .info-tabs__num
+    {
+        display: none;
+    }
     .info__item-title
     {
-        font-size: 30px;
+        font-size: 25px;
     }
     .info__item-descpr
     {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .info-title
     {
-        font-size: 40px;
+        font-size: 30px;
     }
     .info-descpr
     {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .offers
@@ -86,20 +94,20 @@
     }
     .offer-text__title
     {
-        font-size: 30px;
+        font-size: 25px;
     }
     .offer-text__descpr
     {
-        font-size: 25px;
+        font-size: 20px;
     }
     .offer-btn
     {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .projects-title
     {
-        font-size: 40px;
+        font-size: 30px;
     }
     .projects-descpr
     {
@@ -109,38 +117,42 @@
     .project-btn
     {
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .projects-text__descpr
     {
-        font-size: 25px;
+        font-size: 20px;
     }
     /* Slick Slider items  */
+    .project-item
+    {
+        margin: 0 5px;
+    }
     .project-item__price
     {
         font-size: 22px;
     }
     .project-item__info-title
     {
-        font-size: 37px;
+        font-size: 25px;
     }
     .project-item__info-descpr
     {
         line-height: 33px;
-        font-size: 26px;
+        font-size: 18px;
     }
     .project-item__info-progress-bar
     {
-        height: 30px;
+        height: 18px;
         border-radius: 50px;
     }
     .project-item__info-prInformation
     {
-        font-size: 25px;
+        font-size: 15px;
     }
     .project-item__moreInfo a
     {
-        font-size: 25px;
+        font-size: 15px;
     }
     .project-item__moreInfo-btn img
     {
@@ -149,21 +161,25 @@
 
     .reviews-title
     {
-        font-size: 50px;
+        font-size: 30px;
     }
     .reviews-descpr
     {
         line-height: 45px;
-        font-size: 30px;
+        font-size: 20px;
+    }
+    .reviews-buyer
+    {
+        margin: 5px;
     }
     .reviews-buyer__title
     {
-        font-size: 35px;
+        font-size: 25px;
     }
     .reviews-buyer__descpr
     {
         line-height: 35px;
-        font-size: 25px;
+        font-size: 15px;
     }
     .reviews-buyer__triangle
     {
@@ -192,5 +208,92 @@
     .copyright-inner
     {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .info-tabs__menu li a
+    {
+        font-size: 25px;
+    }
+    .info-items
+    {
+        padding-left: 20px;
+    }
+    .info-item__i-img
+    {
+        margin-right: 30px;
+    }
+    .reviews-buyers
+    {
+        flex-direction: column;
+    }
+    .reviews-buyer
+    {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+    .reviews-buyer__triangle
+    {
+        display: none;
+    }
+    .reviews-buyer__author
+    {
+        margin-left: 0;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    .info-item_i
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-item__i-img
+    {
+        display: block;
+        width: 70px;
+        margin: 0;
+    }
+    .offer-img
+    {
+        display: none;
+    }
+    .info-tabs__menu
+    {
+        flex-direction: column;
+    }
+    .info-tabs__menu li a
+    {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .slick-arrow
+    {
+        top: 101%;
+        width: 100px;
+    }
+    .slick-prev
+    {
+    right: 70%;
+    }
+    .slick-next
+    {
+    left: 70%;
+    }
+    .reviews-inner
+    {
+        margin-top: 50px;
+    }
+    .logo
+    {
+        width: 150px;
+    }
+    .login-btn
+    {
+        font-size: 12px;
     }
 }

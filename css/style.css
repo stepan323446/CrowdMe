@@ -431,6 +431,8 @@ a
     flex-direction: column;
     justify-content: space-between;
 
+    min-width: 0;
+
     color: #8a8a8a;
     font-size: 13px;
     font-weight: 400;
@@ -700,10 +702,13 @@ a
 {
     display: flex;
     justify-content: space-between;
+    
+    flex-grow: 1;
     margin-top: 98px;
 }
 .reviews-buyer {
     display: flex;
+    max-width: 397px;
     flex-direction: column;
 }
 .reviews-buyer__block {
@@ -714,7 +719,6 @@ a
 
     background-color: #fff;
     border-radius: 10px;
-    width: 397px;
     padding: 26px 40px;
     height: 100%;
 }
@@ -777,3 +781,4 @@ a
     font-size: 13px;
     color: #848484;
 }
+
