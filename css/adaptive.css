@@ -384,6 +384,10 @@
     {
     left: 70%;
     }
+    .slick-arrow:hover
+    {
+        background-color: #ebebeb;
+    }   
     .reviews-inner
     {
         margin-top: 50px;
