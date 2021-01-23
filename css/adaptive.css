@@ -12,10 +12,6 @@
     {
         font-size: 15px;
     }
-    .header-menu
-    {
-        display: none;
-    }
     .container
     {
         max-width: 980px;
@@ -209,6 +205,108 @@
     {
         font-size: 20px;
     }
+
+    /* Меню для мобильных версий */
+    .header
+    {
+        z-index: 3;
+    }
+    .logo
+    {
+        z-index: 4;
+    }
+    .header-menu-nav
+    {
+        position: fixed;
+        align-items: baseline !important;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        right: -100%;
+        padding: 120px 20px;
+        transition: ease 0.3s;
+
+        z-index: 1;
+    }
+    .header-menu-nav.active
+    {
+        right: 0;
+    }
+    .login-btn
+    {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .header-menu
+    {
+        display: block;
+    }
+    .header-menu li
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .header-menu li a
+    {
+        margin-left: 0;
+    }
+    .header__burger
+    {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        right: 20px;
+
+        border-radius: 100px;
+        z-index: 4;
+
+        
+    }
+    .header__burger span
+    {
+        background-color: #bcda5c;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        left: 5px;
+        top: 13px;
+        transition: ease 0.3s;
+    }
+    .header__burger::before,
+    .header__burger::after
+    {
+        content: '';
+        background-color: #bcda5c;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        left: 5px;
+        transition: ease 0.3s;
+    }
+    .header__burger::before
+    {top: 0px;}
+    .header__burger::after
+    {bottom: 0px;}
+
+    .header__burger.active span
+    {
+        transform: scale(0);
+    }
+    .header__burger.active::before
+    {
+        transform: rotate(45deg);
+        top: 13px;
+    }
+    .header__burger.active::after
+    {
+        transform: rotate(-45deg);
+        bottom: 13px;
+    }
 }
 
 @media only screen and (max-width: 800px)
@@ -244,6 +342,8 @@
         margin-top: 20px;
         justify-content: center;
     }
+    
+    
 }
 @media only screen and (max-width: 600px)
 {
@@ -292,8 +392,59 @@
     {
         width: 150px;
     }
-    .login-btn
+    
+}
+
+@media only screen and (max-width: 335px)
+{
+    .main-Slider-title
     {
-        font-size: 12px;
+        font-size: 25px;
+    }
+    .main-Slider-title span
+    {
+        font-size: 35px;
+    }
+    .becomeMember-btn
+    {
+        font-size: 15px;
+    }
+    .offer-btn
+    {
+        font-size: 15px;
+    }
+    .slick-prev
+    {
+    right: 60%;
+    }
+    .slick-next
+    {
+    left: 60%;
+    }
+
+
+    .header__burger
+    {
+        width: 30px;
+        height: 20px;
+    }
+    .header__burger span
+    {
+        height: 3px;
+        top: 9px
+    }
+    .header__burger::before,
+    .header__burger::after
+    {
+        height: 3px;
+    }
+
+    .header__burger.active::before
+    {
+        top: 9px;
+    }
+    .header__burger.active::after
+    {
+        bottom: 8px;
     }
 }

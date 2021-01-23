@@ -52,6 +52,10 @@ a
 }
 .logo {
 }
+.header__burger
+{
+    display: none;
+}
 .header-menu {
     display: flex;
 }
