@@ -392,7 +392,10 @@
     {
         width: 150px;
     }
-    
+    .becomeMember-btn
+    {
+        padding: 25px 20px;
+    }
 }
 
 @media only screen and (max-width: 335px)
