@@ -65,5 +65,6 @@ $(function()
     $('.header__burger').click(function(e)
     {
         $('.header__burger,.header-menu-nav').toggleClass('active');
+        $('html').toggleClass('lock');
     })
 });
